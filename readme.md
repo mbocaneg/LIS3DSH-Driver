@@ -74,7 +74,6 @@ Example usage is shown below. See the included example project for a complete co
 ...
 while (1) {
 	float pitch, roll;
-```
 	LIS3DSH_readXYZ(&lis3dsh);
 	LIS3DSH_calc_pitch_roll(&lis3dsh, &pitch, &roll);
 
