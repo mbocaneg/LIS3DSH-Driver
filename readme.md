@@ -5,7 +5,7 @@ An example implementation is provided that targets the STM32F407VG MCU, using Cu
 The driver consists of 2 files; LIS3DSH.h and LIS3DSH.c held in the LIS3DSH directory. In order to
 use this driver, the following function pointers must be populated(see LIS3DSH.h):
 
-```
+```c
 void (*SPI_Write_Reg)(uint8_t reg, uint8_t *data, uint16_t len);
 void (*SPI_Read_Reg)(uint8_t reg, uint8_t *data, uint16_t len);
 void (*SPI_CS_Set)(void);
@@ -17,7 +17,7 @@ library, refactor the SPI R/W operations on your MCU of choice (as 4 functions)t
 pointers listed above. Then, have the function pointers point to the functions you declared. The following
 shows example usage for the STM32 platform. See the included example project for a complete code listing.
 
-```
+```c
 //**main.c
 //LIS3DSH.h and LIS3DSH.c are in a folder named LIS3DSH in same directory as this file
 #include "LIS3DSH/LIS3DSH.h"
