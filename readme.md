@@ -1,7 +1,7 @@
 Simple platform agnostic driver for the LIS3DSH accelerometer manufactured by STMicroelectronics.
 An example implementation is provided that targets the STM32F407VG MCU, using CubeMX middleware.
 
-*Usage
+# Usage
 The driver consists of 2 files; LIS3DSH.h and LIS3DSH.c held in the LIS3DSH directory. In order to
 use this driver, the following function pointers must be populated(see LIS3DSH.h):
 
@@ -60,7 +60,7 @@ int main(void) {
 
 ```
 
-*Pitch/Roll calculation
+# Pitch/Roll calculation
 In order to calculate pich/roll, one must call the LIS3DSH_readXYZ(&lis3dsh)
 function, giving it an argument of an LIS3DSH pointer. This simply populates
 the fields of the LIS3DSH structure with raw accelerometer readings. To obtain
