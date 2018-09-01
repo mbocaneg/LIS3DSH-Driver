@@ -61,11 +61,11 @@ int main(void) {
 ```
 
 # Pitch/Roll calculation
-In order to calculate pich/roll, one must call the LIS3DSH_readXYZ(&lis3dsh)
+In order to calculate pich/roll, one must call the `LIS3DSH_readXYZ(&lis3dsh)`
 function, giving it an argument of an LIS3DSH pointer. This simply populates
 the fields of the LIS3DSH structure with raw accelerometer readings. To obtain
-user readable values, one calls the LIS3DSH_calc_pitch_roll(&lis3dsh, &pitch, &roll)
-function (after calling the LIS3DSH_readXYZ function), giving it arguments
+user readable values, one calls the `LIS3DSH_calc_pitch_roll(&lis3dsh, &pitch, &roll)`
+function (after calling the `LIS3DSH_readXYZ` function), giving it arguments
 of an LIS3DSH pointer, as well as float pointers for pitch and roll values. After
 the function returns, these two float pointers will hold pitch/roll values (in degrees).
 Example usage is shown below. See the included example project for a complete code listing.
