@@ -70,7 +70,7 @@ of an LIS3DSH pointer, as well as float pointers for pitch and roll values. Afte
 the function returns, these two float pointers will hold pitch/roll values (in degrees).
 Example usage is shown below. See the included example project for a complete code listing.
 
-```
+```c
 ...
 while (1) {
 	float pitch, roll;
