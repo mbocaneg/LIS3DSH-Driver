@@ -1,3 +1,4 @@
+# LIS3DSH-Driver
 Simple platform agnostic driver for the LIS3DSH accelerometer manufactured by STMicroelectronics.
 An example implementation is provided that targets the STM32F407VG MCU, using CubeMX middleware.
 
