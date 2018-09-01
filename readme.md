@@ -78,8 +78,8 @@ while (1) {
 	LIS3DSH_readXYZ(&lis3dsh);
 	LIS3DSH_calc_pitch_roll(&lis3dsh, &pitch, &roll);
 
-  printf("pitch in degrees: %f", pitch);
-  printf("roll in degrees: %f", roll);
+  	printf("pitch in degrees: %f", pitch);
+  	printf("roll in degrees: %f", roll);
 }
 ...
 ```
