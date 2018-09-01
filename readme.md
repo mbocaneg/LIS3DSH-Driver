@@ -46,14 +46,14 @@ void _spi_read_reg(uint8_t reg, uint8_t *data, uint16_t len){
 ...
 
 int main(void) {
-  ...
-  //bind driver to MCU native SPI calls
-  SPI_Read_Reg = _spi_read_reg;
+  	...
+  	//bind driver to MCU native SPI calls
+  	SPI_Read_Reg = _spi_read_reg;
 	SPI_Write_Reg = _spi_write_reg;
 	SPI_CS_Reset = _spi_cs_reset;
 	SPI_CS_Set = _spi_cs_set;
 
-  //initialize LIS3DSH
+  	//initialize LIS3DSH
 	Lis3dsh lis3dsh;
 	LIS3DSH_init(&lis3dsh);
 	...
